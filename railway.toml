@@ -1,0 +1,20 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "echo 'Building project...'"
+
+[deploy]
+numReplicas = 1
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+
+[[services]]
+name = "backend"
+dir = "backend"
+internal_port = 8000
+healthcheck = "/health"
+
+[[services]]
+name = "frontend"
+dir = "frontend"
+internal_port = 3000

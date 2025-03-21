@@ -1,0 +1,12 @@
+fastapi==0.101.1
+uvicorn==0.23.2
+sqlalchemy==2.0.20
+pydantic==2.1.1
+pydantic-settings==2.0.3
+pytest==7.4.0
+httpx==0.24.1
+python-multipart==0.0.6
+python-dotenv==1.0.0
+psycopg2-binary==2.9.7  # Para conexão com PostgreSQL
+redis==5.0.1  # Cliente Redis para cache
+fakeredis==2.20.0  # Para testes
